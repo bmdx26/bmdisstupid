@@ -1,0 +1,39 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: black; /* Ensures the entire background is black */
+}
+
+.loader {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px; /* Adjust padding as needed */
+  background-color: black;
+}
+
+.loader-text {
+  color: white;
+  font-size: 10rem; /* Doubled font size */
+  font-weight: bold;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}
+
+/* iPad view */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .loader-text {
+      font-size: 8rem; /* Doubled font size for iPads */
+      padding: 15px; /* Adjust padding if needed */
+  }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .loader-text {
+      font-size: 6rem; /* Doubled font size for mobile */
+      padding: 10px; /* Adjust padding if needed */
+  }
+}
