@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const curtain = document.querySelector('.curtain');
   const homepage = document.querySelector('.homepage');
   const header = document.getElementById('header');
-  const numbers = generateOrderedNumbers(15, [97, 98, 99]);
+  const numbers = generateOrderedNumbers(7, [97, 98, 99]);
   let index = 0;
   const duration = 2000; // 2 seconds
   const stepTime = duration / numbers.length; // Time between updates
@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
           homepage.style.opacity = 1;
           header.style.opacity = 1;
-        }, 1500); // Delay for curtain transition to complete
-      }, 500); // Duration for loader fade-out
+        }, 250); // Delay for curtain transition to complete
+      }, 250); // Duration for loader fade-out
     }
   }
 
