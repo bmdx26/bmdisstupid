@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const curtain = document.querySelector('.curtain');
   const homepage = document.querySelector('.homepage');
   const header = document.getElementById('header');
-  const numbers = generateOrderedNumbers(7, [97, 98, 99]);
+  const numbers = generateOrderedNumbers(10, [97, 98, 99]);
   let index = 0;
-  const duration = 2000; // 2 seconds
+  const duration = 2200; // 2.2 seconds
   const stepTime = duration / numbers.length; // Time between updates
 
   function updateLoader() {
